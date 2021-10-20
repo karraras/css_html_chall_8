@@ -1,0 +1,120 @@
+body {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 926px;
+  height: 380px;
+  margin: 40px auto;
+  border: solid #e0e0e0 1px;
+}
+
+.container .image4 {
+  position: absolute;
+  top: 116px;
+  left: 747px;
+}
+.container .image3 {
+  top: 116px;
+  left: 528px;
+  position: absolute;
+}
+.container .image2 {
+  position: absolute;
+  top: 116px;
+  left: 308px;
+}
+.container .image1 {
+  margin-top: 75px;
+  margin-left: 50px;
+  position: absolute;
+}
+.container .image4,
+.container .image3,
+.container .image2,
+.container .image1 {
+  width: 200px;
+  height: 285px;
+  border: 4px solid #e0e0e0;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+hr {
+  width: 180px;
+}
+.image4 .pa1,
+.image3 .pa1,
+.image2 .pa1,
+.image1 .pa1 {
+  display: flex;
+  justify-content: center;
+  color: #9e9e9e;
+}
+.image4 .pa2,
+.image3 .pa2,
+.image2 .pa2,
+.image1 .pa2 {
+  position: absolute;
+  width: 60px;
+  height: 25px;
+  color: #757575;
+  top: 222px;
+  left: 63px;
+  font-weight: bold;
+  padding: 7px;
+  background-color: white;
+}
+.image2 .pa2 {
+  width: 109px;
+  height: 25px;
+  color: #f44336;
+  top: 222px;
+  left: 41px;
+}
+.image2 span {
+  font-size: small;
+  color: #9e9e9e;
+}
+.image2::before {
+  content: "Sale!";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  top: -18px;
+  left: -10px;
+  line-height: 45px;
+  text-align: center;
+}
+.image2::after {
+  position: absolute;
+  content: "";
+  top: 254px;
+  left: 46px;
+  width: 46px;
+  height: 1px;
+  background-color: #9e9e9e;
+}
+
+.image1::before {
+  content: "Featured Products";
+  position: absolute;
+  width: 178px;
+  height: 37px;
+  background-color: green;
+  top: -71px;
+  left: -44px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
